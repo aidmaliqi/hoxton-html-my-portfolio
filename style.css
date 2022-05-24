@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr auto auto auto;
+}
+.header{
+    display: grid;
+    background-color: yellowgreen;
+}
+.header-name{
+    
+    display: grid;
+    background-color: grey;
+    grid-template-columns: auto auto;
+    padding:10px 10px ;
+    gap: 530px;
+    margin: 20px;
+}
+.header-name li{
+    display: inline;
+    padding-right: 30px;
+}
+.header-card{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    background-color: gray;
+    padding: 20px;
+    margin: 100px;
+}
+
+.main{
+    display: grid;
+    background-color: aquamarine;
+    grid-template-rows: auto;
+    place-content: center;
+    gap: 5rem;
+    padding-bottom: 40px;
+
+}
+#github{
+    background-color: coral;
+    text-align: center;
+    display:inline-block;
+    padding: 10px;
+}
+.main button{
+    margin-left: 42%;
+}
+.main div{
+    background-color: coral;
+    padding: 20px;
+}
+.center{
+text-align: center;
+}
+
+.footer{
+    display: grid;
+    background-color: hotpink;
+    grid-template-rows: 20px 40px 40px 40px 40px;
+    gap: 1rem;
+    padding: 0 320px;
+    padding-bottom: 20px;
+    
+}
+.footer div ul li {
+    display: inline;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+    
+}
+.footer div{
+    background-color: cornflowerblue;
+    display: grid;
+    padding-top: 10px;
+    
+}
+.nav{
+    display: grid;
+    background-color: yellowgreen;
+}
+.nav button{
+    padding:20px;
+    scroll-behavior: smooth;
+}
