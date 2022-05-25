@@ -8,79 +8,114 @@
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 1fr auto auto auto;
+    grid-template-rows: auto auto auto auto;
 }
 .header{
     display: grid;
     background-color: yellowgreen;
+    
 }
 .header-name{
     
     display: grid;
     background-color: grey;
     grid-template-columns: auto auto;
-    padding:10px 10px ;
-    gap: 530px;
+    padding: 10px ;
     margin: 20px;
+    border-radius: 10px;
 }
-.header-name li{
-    display: inline;
-    padding-right: 30px;
-}
-.header-card{
+.header-name ul{
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: end;
+    gap: 4rem;
+    
+}
+
+.header-card{
+    width: 70vh;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: auto auto auto auto ;
+    border-radius: 10px;
     background-color: gray;
     padding: 20px;
     margin: 100px;
 }
+h2 {
+    padding-bottom: 1rem;
+    justify-self: center;
+    color: orange;
+}
 
 .main{
+    background-color: gray;
     display: grid;
-    background-color: aquamarine;
-    grid-template-rows: auto;
-    place-content: center;
-    gap: 5rem;
-    padding-bottom: 40px;
-
-}
-#github{
-    background-color: coral;
-    text-align: center;
-    display:inline-block;
-    padding: 10px;
-}
-.main button{
-    margin-left: 42%;
-}
-.main div{
-    background-color: coral;
+    grid-template-columns:auto auto auto ; 
+    gap: 1rem;
     padding: 20px;
 }
-.center{
-text-align: center;
+.main div{
+    border-radius: 10px;
+    outline: 1px white solid;
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+
 }
+
+#pro{
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    
+}
+#github{
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    display:inline-block;
+   padding: 20px;
+}
+
+
 
 .footer{
     display: grid;
-    background-color: hotpink;
-    grid-template-rows: 20px 40px 40px 40px 40px;
+    background-color: coral;
+    grid-auto-flow: row;
     gap: 1rem;
-    padding: 0 320px;
-    padding-bottom: 20px;
+    place-content: center;
+    padding: 20px 0px;
     
 }
-.footer div ul li {
-    display: inline;
-    padding-right: 30px;
-    padding-left: 30px;
+.footer div ul  {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8rem;
+    padding: 10px;
     
     
+    
+}
+#exp{
+    text-align: center;
+    text-align: center;
+   
+    color: white;
+    font-size: 30px;
+    
+
 }
 .footer div{
     background-color: cornflowerblue;
     display: grid;
-    padding-top: 10px;
+    border-radius: 10px;
+    border: 1px white solid;
     
 }
 .nav{
